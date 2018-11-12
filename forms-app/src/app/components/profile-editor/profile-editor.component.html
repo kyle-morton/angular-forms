@@ -37,6 +37,11 @@
   <br>
   <button type="submit" [disabled]="!profileForm.valid">Submit</button>
 
+ 
 </form>
+
+<br>
+<button (click)="updateProfile()">Update Profile</button>
+
 
 <p>{{profileForm.value | json}}</p>

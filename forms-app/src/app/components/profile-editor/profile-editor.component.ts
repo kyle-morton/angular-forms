@@ -30,4 +30,13 @@ export class ProfileEditorComponent implements OnInit {
     console.warn(this.profileForm.value);
   }
 
+  updateProfile() {
+    this.profileForm.patchValue({
+      firstName: 'Nancy',
+      address: {
+        street: '123 Drew Street'
+      }
+    });
+  }
+
 }
